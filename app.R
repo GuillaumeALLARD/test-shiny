@@ -42,7 +42,7 @@ server <- function(input, output) {
 
         # draw the histogram with the specified number of bins
 
-        hist(x, breaks = bins, col = 'red', border = 'black',
+        hist(x, breaks = bins, col = 'red', border = 'red',
 
              xlab = 'Waiting time to next eruption (in mins)',
              main = 'Histogram of waiting times')
