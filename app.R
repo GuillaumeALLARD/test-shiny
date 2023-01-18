@@ -22,7 +22,9 @@ ui <- fluidPage(
                         "Number of bins:",
                         min = 1,
                         max = 50,
-                        value = 7)
+
+                        value = 8)
+
         ),
 
         # Show a plot of the generated distribution
@@ -42,7 +44,7 @@ server <- function(input, output) {
 
         # draw the histogram with the specified number of bins
 
-        hist(x, breaks = bins, col = 'blue', border = 'pink',
+        hist(x, breaks = bins, col = 'red', border = 'red',
 
              xlab = 'Waiting time to next eruption (in mins)',
              main = 'Histogram of waiting times')
